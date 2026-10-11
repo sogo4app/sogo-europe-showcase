@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="googlebot" content="noindex,nofollow">
+<title>SogoApp Europe Creative</title>
+<meta name="description" content="SogoApp Europe launch store creative: App Store and Google Play screenshots, preview videos, voice-overs and store text in 31 languages.">
+<meta name="theme-color" content="#07090a">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#videos">Skip to content</a>
+
+<header class="topbar" id="top">
+  <div class="topbar-in">
+    <a class="brand" href="#top" aria-label="SogoApp, back to top"><img src="assets/icon.png" alt="" width="28" height="28"><span>SogoApp</span><em>Europe creative</em></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#videos">Videos</a><a href="#appstore">App Store</a><a href="#play">Google Play</a><a href="#story">Story</a><a href="#audio">Audio</a><a href="#text">Store text</a><a href="#downloads">Downloads</a>
+    </nav>
+    <label class="langsel"><span class="sr">Language</span>
+      <select id="langSelect" aria-label="Language for the whole page"></select>
+    </label>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="glow g1"></div><div class="glow g2"></div>
+    <div class="wrap hero-in">
+      <img class="wordmark" src="assets/wordmark.png" alt="SogoApp" width="240" height="72">
+      <p class="eyebrow">Europe launch &middot; store creative</p>
+      <h1>Say it <span class="hl-g">privately</span>.<br>Go <span class="hl-y">live</span> publicly.</h1>
+      <p class="lede">Everything the App Store and Google Play listings show in Europe, in one place: screenshots, preview videos, voice-overs, music and store text, in every language we ship.</p>
+      <p class="date">11 October 2026 &middot; SogoApp 1.5.0</p>
+      <ul class="stats" id="stats" aria-label="At a glance"></ul>
+    </div>
+  </section>
+
+  <section id="videos" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">01</span><h2>Preview <span class="hl-y">videos</span></h2>
+        <p>Vertical App Store previews, 22&ndash;26 seconds, with a female voice-over in the viewer's language over our own music bed.</p></header>
+      <div class="rail" id="videoRail" role="tablist" aria-label="Preview video language"></div>
+      <div class="player-grid">
+        <div class="phone"><video id="mainVideo" controls playsinline preload="none"></video></div>
+        <div class="player-side">
+          <p class="kicker" id="videoLang"></p>
+          <p class="note" id="videoNote" hidden></p>
+          <ol class="script" id="videoScript"></ol>
+          <div class="btns" id="videoLinks"></div>
+        </div>
+      </div>
+      <h3 class="sub">All 13 previews</h3>
+      <div class="vgrid" id="videoGrid"></div>
+    </div>
+  </section>
+
+  <section id="appstore" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">02</span><h2>App Store <span class="hl-y">screenshots</span></h2>
+        <p>Six frames per language, 1320&times;2868 (iPhone 6.9&Prime;). Tap a frame for full size and the original file.</p></header>
+      <div class="rail" data-rail="appstore" role="tablist" aria-label="App Store screenshot language"></div>
+      <div class="strip" id="appstoreStrip"></div>
+    </div>
+  </section>
+
+  <section id="play" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">03</span><h2>Google Play <span class="hl-y">screenshots</span></h2>
+        <p>The same six frames, 1080&times;1920, for the Play listing.</p></header>
+      <div class="rail" data-rail="play" role="tablist" aria-label="Google Play screenshot language"></div>
+      <div class="strip strip-play" id="playStrip"></div>
+    </div>
+  </section>
+
+  <section id="story" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">04</span><h2>The <span class="hl-g">story</span></h2>
+        <p>Swiped in order, the six frames read as one arc: from private to public, from you to everyone.</p></header>
+      <p class="arc" id="arc"></p>
+      <div class="story" id="storyGrid"></div>
+      <details class="all-heads">
+        <summary>Every headline in every language</summary>
+        <div class="table-scroll"><table id="headTable"></table></div>
+      </details>
+    </div>
+  </section>
+
+  <section id="audio" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">05</span><h2>Voice-overs <span class="hl-y">&amp;</span> music</h2>
+        <p>One female voice, Alice, reads every language. The script follows the shots: Discover, chat, call, reels, gifts, search, end card.</p></header>
+      <div class="music card" id="music"></div>
+      <div class="vo-grid" id="voGrid"></div>
+    </div>
+  </section>
+
+  <section id="text" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">06</span><h2>Store <span class="hl-y">text</span></h2>
+        <p>The words that sit next to the creative on each store, per language. Counters show the store limits.</p></header>
+      <div class="rail" data-rail="text" role="tablist" aria-label="Store text language"></div>
+      <div class="text-grid" id="textGrid"></div>
+    </div>
+  </section>
+
+  <section id="downloads" class="sec">
+    <div class="wrap">
+      <header class="sec-h"><span class="num">07</span><h2><span class="hl-g">Downloads</span></h2>
+        <p>Full-quality originals, exactly as delivered to the stores.</p></header>
+      <div class="dl-grid" id="zipGrid"></div>
+      <details class="sheets"><summary>Review sheets (every language on one page)</summary><ul id="sheetList"></ul></details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="assets/wordmark.png" alt="SogoApp" width="120" height="36">
+    <p>Private preview for review. Please don't share this link publicly.</p>
+    <details><summary>Photo credits</summary>
+      <p>All photos in the screenshots and previews are from <a href="https://unsplash.com/license" rel="noopener" target="_blank">Unsplash</a>, used under the Unsplash License. The people appear under made-up names. Fonts: Montserrat and Noto, SIL Open Font License. Music: Sunset Deck, made in-house.</p>
+      <ul id="credits"></ul>
+    </details>
+  </div>
+</footer>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+  <button class="lb-x" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
